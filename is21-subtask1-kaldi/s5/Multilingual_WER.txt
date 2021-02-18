@@ -1,0 +1,9 @@
+The baseline results on the different languages [Gujarati(GU), Hindi(HI), Marathi(MR), Oriya(OR), Tamil(TA), Telugu(TE)] are as follows:
+
+GU : %WER 19.27 [ 7003 / 36335, 783 ins, 824 del, 5396 sub ]
+HI : %WER 40.41 [ 18523 / 45839, 1387 ins, 2225 del, 14911 sub ]
+MR : %WER 22.44 [ 7040 / 31368, 877 ins, 478 del, 5685 sub ]
+OR : %WER 39.06 [ 12170 / 31157, 1180 ins, 1459 del, 9531 sub ]
+TA : %WER 33.35 [ 9788 / 29351, 1542 ins, 654 del, 7592 sub ]
+TE : %WER 30.62 [ 8699 / 28413, 1458 ins, 607 del, 6634 sub ]
+Average WER (%): 30.732
