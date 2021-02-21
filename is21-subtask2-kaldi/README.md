@@ -44,3 +44,9 @@ to run the baseline. If you want to change the values of the Bash variables defi
 ```bash
 ./run.sh --nj 10 --test_nj 5
 ```
+## Results
+| Language        | GMM-HMM (% WER) | TDNN (% WER) |
+|-----------------|-----------------|--------------|
+| Hindi-English   | 44.30           | 36.94        |
+| Bengali-English | 39.19           | 34.31        |
+| Average         | 41.745          | 35.625       |
