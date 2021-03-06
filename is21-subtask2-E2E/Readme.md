@@ -5,7 +5,7 @@ This baseline is compiled for Espnet ( Version 1 , Release 0.9.7).
 For installation follow the instruction here: https://espnet.github.io/espnet/installation.html
 
 ###  Baseline Setup Instructions
-Thereafter, please clone our repository to your local system and navigate to this folder, `is21-subtask2-E2E/`. Following  steps needs to be done for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/is21-subtask2-E2E/asr1/` folder in your Espnet installation, using the bellow commands 
+Thereafter, please clone our repository to your local system and navigate to this folder, `is21-subtask2-E2E/`. Following steps needs to be followed for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/is21-subtask2-E2E/asr1/` folder in your Espnet installation, using the below commands 
 
     cd espnet/egs
     mkdir -p is21-subtask2-E2E/asr1
@@ -37,11 +37,11 @@ Copy utils/ and steps/ directory from espnet/egs
 	    local/gen_wavscp.sh folder < old_wavscp > new_wavscp
         mv new_wavscp old_wavscp
 
-where  `old_wavscp`  is say  `data/train/wav.scp`.  `new_wavscp`  contains the right 	paths. If it is correctly setup, replace  `old_wavscp`  with  `new_wavscp`  i.e.  `data/train/wav.scp`  should contain the right paths (same for  `data/test/wav.scp`).`
+where  `old_wavscp`  is say  `data/train/wav.scp`.  `new_wavscp`  contains the right paths. If it is correctly setup, replace `old_wavscp` with `new_wavscp`  i.e.  `data/train/wav.scp`  should contain the right paths (same for  `data/test/wav.scp`).`
 
 ### Feature Extraction 
 
-To extract features run the following commands : 
+To extract features run the following commands: 
 
      ./run.sh --stage 1 --stop_stage 1 --nj <#no of jobs> 
      ./run.sh --stage 2 --stop_stage 2 --nj <#no of jobs> 
@@ -61,6 +61,6 @@ To extract features run the following commands :
 For more details on run.sh, please refer [Espnet example](https://espnet.github.io/espnet/tutorial.html) 
 
 ### Results 
-Following WER were obtained using the above recipie on Test Set: 
+Following WER were obtained using the above recipe on Test Set: 
 Ben-Eng(WER): 37.2 (Trained for 36 epochs)
 Hin-Eng(WER):  27.7 (Trained for 29 epochs)
