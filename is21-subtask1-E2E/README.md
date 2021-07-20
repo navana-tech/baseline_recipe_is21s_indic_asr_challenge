@@ -13,6 +13,18 @@ where `source.wav` is the source audio file (at 16kHz in this case for Tamil, Te
 This baseline is compiled for Espnet ( Version 1 , Release 0.9.7). 
 For installation follow the instruction here: https://espnet.github.io/espnet/installation.html
 
+###  Baseline Setup Instructions
+Thereafter, please clone our repository to your local system and navigate to this folder, `is21-subtask1-E2E/`. Following steps needs to be followed for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/is21-subtask1-E2E/asr1/` folder in your Espnet installation, using the below commands 
+
+    cd espnet/egs
+    mkdir -p is21-subtask1-E2E/asr1
+    
+Copy utils/ and steps/ directory from espnet/egs  
+
+    cp -r espnet/egs/librispeech/asr/steps espnet/egs/is21-subtask1-E2E/asr1/steps 
+    cp -r espnet/egs/librispeech/asr/utils espnet/egs/is21-subtask1-E2E/asr1/utils 
+
+
 ### Audio data directory organization
 
 The dataset of the 6 languages associated with subtask 1 (Gujarati, Hindi, Marathi, Odia, Tamil, Telugu) must be organized in a single folder in a particular format. For example, Lets say folder containing all the data is `IS21_subtask_1_data`, and say the path to this folder is `/home/user/Downloads/IS21_subtask_1_data`
@@ -81,7 +93,7 @@ where `path_to_data` (set by the user) is the path to the folder containing all 
 2) `local/train_data_prep.sh` - Prepares the kaldi specific files `wav.scp`, `text`, `utt2spk` for the train data
 3) `local/test_data_prep.sh` - Prepares the kaldi specific files `wav.scp`, `text`, `utt2spk` for the test data
 
-The above scripts will help you create `data/train` and `data/test` folders. 
+The above scripts will help you create `espnet/egs/is21-subtask1-E2E/asr1/data/train` and `espnet/egs/is21-subtask1-E2E/asr1/data/test` folders. 
 
 ### Feature Extraction 
 
