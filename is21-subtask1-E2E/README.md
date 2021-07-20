@@ -105,10 +105,10 @@ To extract features run the following commands:
 
 ### Acoustic Model Training 
 
-    ./run.sh --stage 4 --stop_stage 4 --ngpu <no. of gpu's,  default 4>
+    ./run.sh --stage 3 --stop_stage 3 --ngpu <no. of gpu's,  default 4>
 
 ### Decoding 
 
-    ./run.sh --stage 5  
+    ./run.sh --stage 4  
 
 For more details on run.sh, please refer [Espnet example](https://espnet.github.io/espnet/tutorial.html) 
