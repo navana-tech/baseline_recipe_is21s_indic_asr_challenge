@@ -14,15 +14,16 @@ This baseline is compiled for Espnet ( Version 1 , Release 0.9.7).
 For installation follow the instruction here: https://espnet.github.io/espnet/installation.html
 
 ###  Baseline Setup Instructions
-Thereafter, please clone our repository to your local system and navigate to this folder, `is21-subtask1-E2E/`. Following steps needs to be followed for Hindi-English and Bengali-English downloaded data.  Copy the contents of this folder to the `egs/is21-subtask1-E2E/asr1/` folder in your Espnet installation, using the below commands 
+Thereafter, please clone our repository to your local system and navigate to this folder, `is21-subtask1-E2E/`. Following steps needs to be followed for cloned repository.  Copy the contents of this folder to the `egs/is21-subtask1-E2E/asr1/` folder in your Espnet installation, using the below commands 
 
     cd espnet/egs
     mkdir -p is21-subtask1-E2E/asr1
+    cp -r <Your Download Folder> espnet/egs/is21-subtask2-E2E/asr1
     
 Copy utils/ and steps/ directory from espnet/egs  
 
-    cp -r espnet/egs/librispeech/asr/steps espnet/egs/is21-subtask1-E2E/asr1/steps 
-    cp -r espnet/egs/librispeech/asr/utils espnet/egs/is21-subtask1-E2E/asr1/utils 
+    cp -r espnet/egs/timit/asr/steps espnet/egs/is21-subtask1-E2E/asr1/steps 
+    cp -r espnet/egs/timit/asr/utils espnet/egs/is21-subtask1-E2E/asr1/utils 
 
 
 ### Audio data directory organization
