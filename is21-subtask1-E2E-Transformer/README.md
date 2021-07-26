@@ -22,8 +22,8 @@ Thereafter, please clone our repository to your local system and navigate to thi
     
 Copy utils/ and steps/ directory from espnet/egs  
 
-    cp -r espnet/egs/timit/asr/steps espnet/egs/is21-subtask1-E2E/asr1/steps 
-    cp -r espnet/egs/timit/asr/utils espnet/egs/is21-subtask1-E2E/asr1/utils 
+    cp -r espnet/egs/librispeech/asr/steps espnet/egs/is21-subtask1-E2E/asr1/steps 
+    cp -r espnet/egs/librispeech/asr/utils espnet/egs/is21-subtask1-E2E/asr1/utils 
 
 
 ### Audio data directory organization
